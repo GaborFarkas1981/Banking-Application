@@ -28,6 +28,11 @@ https://start.spring.io/
 - Until that name field is the UID
 - Let's write some failing Integration Tests
 - Writing custom exceptions
-- Adding AccountDTO and 
+- Adding AccountDTO and APIs, repositories and services and mappers etc.
+
+H2 database: http://localhost:8080/h2-console/  password: password
+
+Swagger-ui: http://localhost:8080/swagger-ui/
+
 
 

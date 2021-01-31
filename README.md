@@ -26,5 +26,6 @@ https://start.spring.io/
 - Building up the project structure (packages) and creating the only one Account model (DAO)
 - Account doesn't have accountNumber field // TODO add accountNumber as the UID of an account
 - Until that name field is the UID
+- Let's write some failing Integration Tests
 
 

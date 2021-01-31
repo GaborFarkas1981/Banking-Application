@@ -19,7 +19,9 @@ Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/
 ```shell
 mvn spring-boot:run
 ```
-First of all we need a Spring Boot starter app
+- First of all we need a Spring Boot starter app
 https://start.spring.io/
+- Adding some dependencies to the pom.xml (H2 embedded Database with Mysql, Lombok, QueryDsl, OpenApi (Swagger-ui))
+- I want to use QueryDSL with Lombok and it won't work out of the box: https://stackoverflow.com/questions/44522494/how-to-make-querydsl-and-lombok-work-together
 
 

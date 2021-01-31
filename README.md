@@ -23,5 +23,8 @@ mvn spring-boot:run
 https://start.spring.io/
 - Adding some dependencies to the pom.xml (H2 embedded Database with Mysql, Lombok, QueryDsl, OpenApi (Swagger-ui))
 - I want to use QueryDSL with Lombok and it won't work out of the box: https://stackoverflow.com/questions/44522494/how-to-make-querydsl-and-lombok-work-together
+- Building up the project structure (packages) and creating the only one Account model (DAO)
+- Account doesn't have accountNumber field // TODO add accountNumber as the UID of an account
+- Until that name field is the UID
 
 

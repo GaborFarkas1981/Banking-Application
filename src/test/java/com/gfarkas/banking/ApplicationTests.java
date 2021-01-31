@@ -1,13 +1,16 @@
 package com.gfarkas.banking;
 
+import com.gfarkas.banking.dto.AccountDTO;
+import com.gfarkas.banking.exception.AccountAlreadyExistsException;
+import com.gfarkas.banking.exception.AccountNotFoundException;
+import com.gfarkas.banking.exception.InSufficientFundException;
 import com.gfarkas.banking.model.Currency;
 import com.gfarkas.banking.model.Money;
+import org.hibernate.cfg.NotYetImplementedException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.transaction.Transactional;
 import java.math.BigDecimal;
 
 @SpringBootTest(classes = Application.class)
@@ -93,8 +96,8 @@ class ApplicationSpringTests {
 
 	@Test
 	void cannotTransferBetweenDifferentCurrencies() throws AccountAlreadyExistsException {
-		AccountDTO accountOne = newAccount(JOHN_DOE, EUR, HUNDRED, new BigDecimal("0.82"),true);
-		AccountDTO accountTwo = newAccount(JANE_DOE, USD, HUNDRED, new BigDecimal("1.00"),false);
+		newAccount(JOHN_DOE, EUR, HUNDRED, new BigDecimal("0.82"),true);
+		newAccount(JANE_DOE, USD, HUNDRED, new BigDecimal("1.00"),false);
 
 		Assertions.assertThrows(NotYetImplementedException.class,
 				() -> service.transfer(JOHN_DOE, JANE_DOE, new BigDecimal("50.00")));

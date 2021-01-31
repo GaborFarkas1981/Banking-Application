@@ -27,5 +27,7 @@ https://start.spring.io/
 - Account doesn't have accountNumber field // TODO add accountNumber as the UID of an account
 - Until that name field is the UID
 - Let's write some failing Integration Tests
+- Writing custom exceptions
+- Adding AccountDTO and 
 
 

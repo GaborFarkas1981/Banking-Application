@@ -19,3 +19,7 @@ Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/
 ```shell
 mvn spring-boot:run
 ```
+First of all we need a Spring Boot starter app
+https://start.spring.io/
+
+
